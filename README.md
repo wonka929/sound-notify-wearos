@@ -1,0 +1,1 @@
+adb shell cmd notification allow_listener com.copilot.soundnotifywearos/com.copilot.soundnotifywearos.NtfyNotificationListenerService
