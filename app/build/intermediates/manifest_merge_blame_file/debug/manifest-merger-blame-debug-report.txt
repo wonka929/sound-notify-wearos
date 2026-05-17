@@ -1,0 +1,165 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.copilot.soundnotifywearos"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-feature android:name="android.hardware.type.watch" />
+11-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:4:5-64
+11-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:4:19-61
+12
+13    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+13-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:6:5-93
+13-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:6:22-90
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:7:5-77
+14-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:7:22-74
+15
+16    <permission
+16-->[androidx.core:core:1.13.1] /home/francesco/.gradle/caches/9.0.0/transforms/863c53b8a62efec7f40427ab789039f8/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+17        android:name="com.copilot.soundnotifywearos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.13.1] /home/francesco/.gradle/caches/9.0.0/transforms/863c53b8a62efec7f40427ab789039f8/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.13.1] /home/francesco/.gradle/caches/9.0.0/transforms/863c53b8a62efec7f40427ab789039f8/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.copilot.soundnotifywearos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.13.1] /home/francesco/.gradle/caches/9.0.0/transforms/863c53b8a62efec7f40427ab789039f8/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.13.1] /home/francesco/.gradle/caches/9.0.0/transforms/863c53b8a62efec7f40427ab789039f8/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:9:5-38:19
+23        android:allowBackup="true"
+23-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:10:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.13.1] /home/francesco/.gradle/caches/9.0.0/transforms/863c53b8a62efec7f40427ab789039f8/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:label="SoundNotifyWearOS"
+27-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:11:9-42
+28        android:supportsRtl="true"
+28-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:12:9-35
+29        android:theme="@android:style/Theme.DeviceDefault" >
+29-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:13:9-59
+30        <meta-data
+30-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:15:9-17:36
+31            android:name="com.google.android.wearable.standalone"
+31-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:16:13-66
+32            android:value="true" />
+32-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:17:13-33
+33
+34        <service
+34-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:19:9-27:19
+35            android:name="com.copilot.soundnotifywearos.NtfyNotificationListenerService"
+35-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:20:13-60
+36            android:exported="true"
+36-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:23:13-36
+37            android:label="Notification Listener"
+37-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:21:13-50
+38            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+38-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:22:13-87
+39            <intent-filter>
+39-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:24:13-26:29
+40                <action android:name="android.service.notification.NotificationListenerService" />
+40-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:25:17-99
+40-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:25:25-96
+41            </intent-filter>
+42        </service>
+43
+44        <activity
+44-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:29:9-37:20
+45            android:name="com.copilot.soundnotifywearos.MainActivity"
+45-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:30:13-41
+46            android:exported="true"
+46-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:31:13-36
+47            android:taskAffinity="" >
+47-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:32:13-36
+48            <intent-filter>
+48-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:33:13-36:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:34:17-69
+49-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:34:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:35:17-77
+51-->/home/francesco/GITHUB/sound-notify-wearos/app/src/main/AndroidManifest.xml:35:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->[androidx.compose.ui:ui-tooling-android:1.6.7] /home/francesco/.gradle/caches/9.0.0/transforms/8fa482ee0b5df6dd12a5212143b940ea/transformed/jetified-ui-tooling-release/AndroidManifest.xml:23:9-25:39
+55            android:name="androidx.compose.ui.tooling.PreviewActivity"
+55-->[androidx.compose.ui:ui-tooling-android:1.6.7] /home/francesco/.gradle/caches/9.0.0/transforms/8fa482ee0b5df6dd12a5212143b940ea/transformed/jetified-ui-tooling-release/AndroidManifest.xml:24:13-71
+56            android:exported="true" />
+56-->[androidx.compose.ui:ui-tooling-android:1.6.7] /home/francesco/.gradle/caches/9.0.0/transforms/8fa482ee0b5df6dd12a5212143b940ea/transformed/jetified-ui-tooling-release/AndroidManifest.xml:25:13-36
+57
+58        <provider
+58-->[androidx.emoji2:emoji2:1.3.0] /home/francesco/.gradle/caches/9.0.0/transforms/76e10795c622b39273cb1d254dce41ed/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.emoji2:emoji2:1.3.0] /home/francesco/.gradle/caches/9.0.0/transforms/76e10795c622b39273cb1d254dce41ed/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+60            android:authorities="com.copilot.soundnotifywearos.androidx-startup"
+60-->[androidx.emoji2:emoji2:1.3.0] /home/francesco/.gradle/caches/9.0.0/transforms/76e10795c622b39273cb1d254dce41ed/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+61            android:exported="false" >
+61-->[androidx.emoji2:emoji2:1.3.0] /home/francesco/.gradle/caches/9.0.0/transforms/76e10795c622b39273cb1d254dce41ed/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+62            <meta-data
+62-->[androidx.emoji2:emoji2:1.3.0] /home/francesco/.gradle/caches/9.0.0/transforms/76e10795c622b39273cb1d254dce41ed/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+63-->[androidx.emoji2:emoji2:1.3.0] /home/francesco/.gradle/caches/9.0.0/transforms/76e10795c622b39273cb1d254dce41ed/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+64                android:value="androidx.startup" />
+64-->[androidx.emoji2:emoji2:1.3.0] /home/francesco/.gradle/caches/9.0.0/transforms/76e10795c622b39273cb1d254dce41ed/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/francesco/.gradle/caches/9.0.0/transforms/d43c243feb46cd8903fd334df32f099c/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+66-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/francesco/.gradle/caches/9.0.0/transforms/d43c243feb46cd8903fd334df32f099c/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+67                android:value="androidx.startup" />
+67-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/francesco/.gradle/caches/9.0.0/transforms/d43c243feb46cd8903fd334df32f099c/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+70                android:value="androidx.startup" />
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+71        </provider>
+72
+73        <receiver
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+74            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+75            android:directBootAware="false"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+76            android:enabled="true"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+77            android:exported="true"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+78            android:permission="android.permission.DUMP" >
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+80                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+83                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+86                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+89                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/francesco/.gradle/caches/9.0.0/transforms/5d27dbaa79164a50afbf1eab1125ad60/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+90            </intent-filter>
+91        </receiver>
+92    </application>
+93
+94</manifest>

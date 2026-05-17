@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.copilot.soundnotifywearos.app-debug-45:/raw_notify_sound.mp3.flat",
+        "source": "com.copilot.soundnotifywearos.app-main-47:/raw/notify_sound.mp3"
+    }
+]
